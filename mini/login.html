@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0; /* Change background color if needed */
+            background-image: url('image/img.jpg');
+            background-repeat: no-repeat;
+            background-size: cover; /* Cover the entire area */
+            background-position: center; /* Center the image */
+        }
+
+        .header {
+            backdrop-filter: blur(6px);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: rgba(255, 255, 255, 0.25); /* Add a semi-transparent background */
+            padding: 20px;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form {
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: rgba(255, 255, 255, 0.25); /* Add a semi-transparent background */
+            display: flex;
+            flex-direction: column;
+            width: 350px;
+            padding: 20px; /* Add padding inside the form */
+        }
+
+        .form p {
+            margin: 10px 0 5px;
+        }
+
+        .form input {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: calc(100% - 22px); /* Adjust width to account for padding and border */
+        }
+
+        .submit {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            text-align: center;
+            text-decoration: none; /* Ensure link styles are reset */
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="box">
+            <div class="form">
+                <form>
+                    <p>Name</p> <input class="inp" placeholder="Name" type="text">
+                    <p>Password</p> <input class="inp" placeholder="Password" type="password">
+                    <div class="submit">
+                        <button class="button" type="submit">LOGIN</button>
+                    </div>
+                    <hr>
+                    <center>------Or------</center>
+                    <hr>
+                    <div class="submit">
+                        <a class="button login-link" href="form.html">SIGN UP</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
